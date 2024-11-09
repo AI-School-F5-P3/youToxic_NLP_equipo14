@@ -1,0 +1,40 @@
+# Archivos y carpetas del entorno virtual
+venv/
+env/
+env3/
+venv3/
+
+
+# Data files
+*.json
+*.csv
+
+# Ignore the dataset files
+
+
+# Archivos de configuración específicos del entorno
+*.local
+*.log
+*.lock
+*.pid
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Archivos de Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Archivos de compilación
+__pycache__/
+*.py[cod]
+*.so
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.iml
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
