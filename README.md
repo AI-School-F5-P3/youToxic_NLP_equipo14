@@ -1,3 +1,5 @@
+
+![youToxic_NLP_social_preview](https://github.com/user-attachments/assets/7239d23b-4709-4f53-964d-91a46a8a67d1)
 # YouToxic NLP project - equipo 14
 YouTube lleva un tiempo preocupado por el aumento de los mensajes de odio entre los
 comentarios de sus vídeos y ha llegado a un punto donde un equipo de moderadores no da
