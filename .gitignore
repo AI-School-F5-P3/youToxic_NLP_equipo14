@@ -1,4 +1,5 @@
 # Archivos y carpetas del entorno virtual
+.venv/
 venv/
 env/
 env3/
