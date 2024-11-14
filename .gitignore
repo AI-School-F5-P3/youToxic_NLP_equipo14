@@ -8,9 +8,9 @@ venv3/
 
 # Data files
 *.json
-*.csv
 
-# Ignore the dataset files
+# Ignore the youtoxic_english_1000.csv dataset file
+Data/youtoxic_english_1000.csv
 
 
 # Archivos de configuración específicos del entorno
