@@ -14,7 +14,7 @@ from fastapi import HTTPException
 
 
 # Replace with your API key
-API_KEY = "AIzaSyAv3L7QtaNCWN1Us2_3nJeX9dmAawv1woY"
+API_KEY = "xxxxxxxxxxxxxxx"
 
 def get_video_id(url):
     """Extract video ID from YouTube URL"""
