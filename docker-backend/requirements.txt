@@ -1,0 +1,16 @@
+numpy
+pandas
+sqlalchemy
+scikit-learn
+transformers
+python-dotenv
+plotly
+torch
+matplotlib
+openai
+google-api-python-client
+urllib3
+fastapi
+pydantic
+uvicorn
+seaborn
