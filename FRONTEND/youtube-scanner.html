@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner - YouTube Watchdog</title>
+    <link rel="stylesheet" href="youtube-scanner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Add DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+            YouTube Watchdog
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-scanner.html" class="active">Scanner</a>
+            <a href="reports.html">Reports</a>
+            <a href="premium.html">Premium</a>
+        </div>
+    </nav>
+    <main>
+        <section class="scanner-section">
+            <div class="scanner-container">
+                <div class="scanner-header">
+                    <h1>Video Comments Scanner</h1>
+                    
+                </div>
+                <div class="scanner-card">
+                    <div class="scanner-input-wrapper">
+                        <div class="input-group">
+                            <input type="text" id="youtube-link" placeholder="Paste YouTube video URL here">
+                            <button id="scan-video" class="scan-button">
+                                <i class="fas fa-search"></i>
+                                Scan Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="scanner-results">
+                        <div class="results-grid">
+                            <div id="youtube-player-container" class="youtube-player-container"></div>
+                            <div class="table-container">
+                                <table id="scan-results-table" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Author</th>
+                                            <th>Comment</th>
+                                            <th>IsToxic</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add required scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="youtube-scanner.js"></script>
+
+   
+    <footer>
+        <div class="footer-content">
+            © 2024 YouTube Watchdog. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="youtube-scanner.js"></script>
+</body>
+</html>

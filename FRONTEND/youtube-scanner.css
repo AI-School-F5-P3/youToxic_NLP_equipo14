@@ -1,0 +1,296 @@
+/* CSS Variables */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --background: #ffffff;
+    --background-alt: #f3f4f6;
+    --border-radius: 8px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background);
+}
+
+/* Navbar */
+.nav-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-sm);
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+    background: var(--background-alt);
+}
+
+/* Scanner Section */
+.scanner-section {
+    padding: 8rem 1.5rem 4rem;
+    min-height: 200vh;
+    background: var(--background-alt);
+}
+
+/* Add vertical spacing */
+.scanner-section,
+.scanner-container,
+.scanner-header,
+.scanner-input-wrapper,
+.scanner-results {
+    margin-bottom: 2rem;
+}
+
+.scanner-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scanner-header {
+    margin-bottom: 1.2rem;
+
+}
+
+.scanner-container h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.scanner-description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.scanner-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.scanner-input-wrapper {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1rem;
+    background: var(--background-alt);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+}
+
+.scan-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.scan-button:hover {
+    background: var(--secondary-color);
+}
+
+
+/* Update the results grid size */
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    min-height: 800px; /* Increased height */
+}
+
+/* Update the YouTube player container */
+/* Table container with fixed height */
+.table-container {
+    width: 100%;
+    height: 600px; /* Fixed height */
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* DataTables wrapper */
+.dataTables_wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header controls container */
+.dt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Length and filter controls */
+.dataTables_length,
+.dataTables_filter {
+    margin: 0;
+    padding: 0;
+}
+
+.dataTables_length label,
+.dataTables_filter label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+/* Table scroll container */
+.dataTables_scrollBody {
+    flex: 1;
+    overflow-y: auto !important;
+    max-height: 350px !important; /* Adjust this to ensure all elements fit within container */
+}
+
+/* Table header */
+.dataTables_scrollHead {
+    overflow: hidden !important;
+}
+
+/* Pagination container */
+.dataTables_paginate {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Info text */
+.dataTables_info {
+    padding-top: 0.5rem;
+}
+
+/* Ensure table takes full width */
+table.dataTable {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .table-container {
+        height: 500px; /* Maintain fixed height on mobile */
+    }
+    
+    .dataTables_scrollBody {
+        max-height: 300px !important; /* Slightly reduced for mobile */
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------*/
+
+
+/* youtube-scanner.css */
+.youtube-player-container {
+    width: 100%;
+    height: 400px; /* Set the desired height here */
+    background: #000;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1rem;
+    }
+    
+    .youtube-player-container {
+        height: 400px; /* Fixed height for mobile */
+    }
+
+    .table-container {
+        height: 400px; /* Fixed height for mobile */
+    }
+}
+
+/* Hide Chat Widget */
+.chat-container {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    background: var(--background);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    box-shadow: var(--shadow-sm);
+}

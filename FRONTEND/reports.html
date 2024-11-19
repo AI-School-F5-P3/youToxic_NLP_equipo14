@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - YouTube Watchdog</title>
+    <link rel="stylesheet" href="youtube-scanner.css">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+            YouTube Watchdog
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-scanner.html">Scanner</a>
+            <a href="reports.html" class="active">Reports</a>
+            <a href="premium.html">Premium</a>
+        </div>
+    </nav>
+    <main class="reports-section">
+        <div class="reports-container">
+            <div class="reports-header">
+                <h1>Analysis Reports</h1>
+            </div>
+            <div class="reports-card">
+                <div class="selector-wrapper">
+                    <select id="reportType" class="report-selector">
+                        <option value="">Select Report Type</option>
+                        <option value="current">Current Video Analysis</option>
+                        <option value="historical">Historical Analysis</option>
+                    </select>
+                </div>
+                <div class="reports-content">
+                    <div class="reports-grid">
+                        <div class="report-image-container">
+                            <img id="reportImage1" class="report-image" alt="Select a report type">
+                        </div>
+                        <div class="report-image-container">
+                            <img id="reportImage2" class="report-image" alt="Select a report type">
+                        </div>
+                        <div class="report-image-container grid-span-2">
+                            <img id="reportImage3" class="report-image" alt="Select a report type">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 YouTube Watchdog. All rights reserved.</p>
+    </footer>
+    <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Watchdog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Chat Toggle Button Styles */
+        .chat-toggle-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 16px 24px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 1000;
+        }
+
+        .chat-toggle-button:hover {
+            background-color: #1976D2;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .chat-toggle-button .fas {
+            font-size: 20px;
+        }
+
+        .chat-toggle-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animation for the button */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .chat-toggle-button {
+            animation: pulse 2s infinite;
+        }
+
+        .chat-toggle-button:hover {
+            animation: none;
+        }
+
+        /* Chat Container Position Adjustment */
+        .chat-container {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+        }
+
+        /* Hide chat toggle when chat is visible */
+        .chat-container.active + .chat-toggle-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo">
+            YouTube Watchdog
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="youtube-scanner.html">Scanner</a>
+            <a href="reports.html">Reports</a>
+            <a href="premium.html">Premium</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Monitor Video Comments on YouTube</h1>
+                <p>Advanced AI-powered scanning for detecting and analyzing inappropriate content</p>
+                <div class="hero-buttons">
+                    <a href="youtube-scanner.html" class="cta-button primary">Start Scanning</a>
+                   
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Add this right after the below-hero-image section in your HTML -->
+        <section class="model-selector">
+            <div class="selector-container">
+                <img src="yt.png" alt=" " class="youtube-image">
+                <div class="model-controls">
+                    <h3>Select Language Model</h3>
+                    <div class="model-options">
+                        <label class="model-option">
+                            <input type="radio" name="model" value="multi_lang" checked>
+                            <span class="radio-label">Multi-Language</span>
+                            <span class="model-description">Supports multiple languages including English</span>
+                        </label>
+                        <label class="model-option">
+                            <input type="radio" name="model" value="just_en">
+                            <span class="radio-label">English Only</span>
+                            <span class="model-description">Optimized for English content</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="chat-container" class="chat-container chat-widget hidden">
+        <div class="chat-header">
+            <h3>Chat with our Watchdog</h3>
+            <button id="minimize-chat" class="minimize-chat">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <form id="chat-form" class="chat-input-form">
+            <input id="chat-input" type="text" placeholder="Type your message..." />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <button id="chat-toggle" class="chat-toggle-button">
+        <i class="fas fa-comments"></i> Test our Youtube Watchdog
+    </button>
+
+    <footer>
+        <div class="footer-content">
+            © 2024 YouTube Watchdog. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
