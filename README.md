@@ -24,3 +24,20 @@ Una aplicación que utiliza Inteligencia Artificial con 2 modelos de ML de tipo 
 
 Una versión Premium de suscripción que utiliza un modelo de Lenguaje LLM proporcionado por OpenAI:
 - 100% de precisión en la clasificación
+
+## El Equipo
+<img width="198" alt="Jose_circular" src="https://github.com/user-attachments/assets/e4459802-97f9-4757-a47b-28a554ad4815">
+
+| [José Antonio Rodríguez](https://github.com/joserodr68) |
+|:---|
+|Director de Desarrollo|
+|Especialista en Machine Learning y Procesamiento de Lenguaje Natural|
+
+<img width="197" alt="Captura de pantalla 2024-11-20 a las 0 45 56" src="https://github.com/user-attachments/assets/7193fa1f-f1d3-450b-a8cb-1451f16df7be">
+
+| [Aitor Pérez](https://github.com/aitorph7) |
+|:---|
+|Experto en Análisis de Datos y Optimización de Plataformas|
+|Especialista en soluciones escalables|
+
+
