@@ -123,7 +123,7 @@ Make sure to keep your OpenAI API key confidential and never commit it to versio
 
 
 
-## El Equipo
+## El Equipo 🇪🇸
 <img width="198" alt="Jose_circular" src="https://github.com/user-attachments/assets/e4459802-97f9-4757-a47b-28a554ad4815">
 
 | [José Antonio Rodríguez](https://github.com/joserodr68) |
@@ -138,4 +138,22 @@ Make sure to keep your OpenAI API key confidential and never commit it to versio
 |Experto en Análisis de Datos y Optimización de Plataformas|
 |Especialista en soluciones escalables|
 
+## Contribuciones
 
+If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository
+2. Create your feature branch ```git checkout -b feature/AmazingFeature```
+3. Keep commits atomic and with descriptive messages
+4. Ensure any new code follows the existing coding style
+5. Update documentation as needed
+6. Create a Pull Request with a detailed description of your changes
+
+### ¡Gracias por visitarnos!
+
+Thank you for visiting our repository! We appreciate your interest in YouToxic NLP project. If you find this project useful, please consider giving it a star ⭐ and sharing it with others who might benefit from it.
+
+For any questions or suggestions, feel free to open an issue or contact the team members directly.
+
+---
+Hecho con ❤️ por Equipo 14 - AI School F5
