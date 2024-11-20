@@ -25,7 +25,7 @@ Una aplicación que utiliza Inteligencia Artificial con 2 modelos de ML de tipo 
 Una versión Premium de suscripción que utiliza un modelo de Lenguaje LLM proporcionado por OpenAI:
 - 100% de precisión en la clasificación
 
-# Technical Setup Guide 🇬🇧
+# Technical Setup Guide
 
 ## Prerequisitos
 - Python 3.11 o superior
@@ -121,7 +121,7 @@ docker run -p 8000:8000 -e OPENAI_API_KEY=your_key youtoxic-backend
 Asegúrate de mantener confidencial tu clave API de OpenAI y nunca la envíes al control de versiones.
 
 
-## El Equipo 🇪🇸
+## El Equipo
 <img width="198" alt="Jose_circular" src="https://github.com/user-attachments/assets/e4459802-97f9-4757-a47b-28a554ad4815">
 
 | [José Antonio Rodríguez](https://github.com/joserodr68) |
